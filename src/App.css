@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-image: linear-gradient( rgb(101, 173, 241), pink,white);
+  font-family: "Labrada", serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav {
+  height: 70px;
+  background-color: #338be59e;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px 52px 12px 50px;
+}
+.nav__child {
+  font-size: 36px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.nav_p:hover {
+  color: orange;
+}
+
+table {
+  text-align: center;
+  margin: auto;
+  background-color: white;
+  width: 80%;
+  border-radius: 10px;
+  height: 50vh;
+}
+td {
+  font-size: 20px;
+  border-bottom: 1px solid black;
+}
+
+table th {
+  padding: 10px;
+  font-size: 30px;
+    border-bottom: 1px solid black;
+    font-family: monospace;
+}
+
+.tablehead {
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.tablehead button {
+  width: 200px;
+  height: 48px;
+  font-weight: 600;
+  border-radius: 30px;
+  font-size: 20px;
+  background-color: deepskyblue;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+table {
+  border: 1px solid black;
+}
+.action_buttons button {
+  margin-left: 2rem;
+  width: 20%;
+}
+.h1heading{
+  text-align: center;
+    margin-top: 18px;
+    font-size: 25px;
+    font-family: monospace;
+}
+.editpart {
+  width: 100%;
+  height:500px ;
+  margin-top: 60px;
+}
+.editpartinside{
+  width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+}
+.name,.age,.course,.batch{
+  width: 500px;
+    height: 100px;
+    margin: 50px 50px 50px 75px;
+}
+.editpartinside input{
+  width: 480px;
+  height: 80px;
+  font-size: 24px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.editpart_buttons {
+  width: 90%;
+    height: 100px;
+    margin-top: 50px;
+    display: flex;
+    margin-left: 5%;
 }
+.btn-cancle{
+  font-size: 35px;
+    width: 270px;
+    height: 70px;
+    background-color: white;
+    margin-left: 275%;
+    border-radius: 48px;
+}
+.btn-update{
+  font-size: 35px;
+    width: 270px;
+    height: 70px;
+    margin-left: 290%;
+    background-color: white;
+    border-radius: 48px;
+}
+
